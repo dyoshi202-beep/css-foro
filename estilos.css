@@ -198,9 +198,12 @@
 .how4 b {
     background: linear-gradient(90deg, #ff4fd8, #3da8ff);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+
+    -webkit-text-fill-color: transparent;
     color: transparent;
+
+    display: inline-block;
     font-size: 14px;
     letter-spacing: 1px;
 }
