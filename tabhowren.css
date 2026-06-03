@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Wildcrow';
+    src: url('https://files.jcink.net/uploads2/cherryboomboom/Wildcrow.ttf');
+}
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('https://files.jcink.net/uploads2/cherryboomboom/CaviarDreams.ttf');
+}
+
+@font-face {
+    font-family: 'Wild_Wolf';
+    src: url('https://files.jcink.net/uploads2/cherryboomboom/Wild_Wolf.ttf');
+}
+
+.howtab {
+    width: 550px;
+    border: 1px solid #000;
+    box-shadow: 0 0 7px 4px #1A72D6;
+    margin-top: 40px;
+    background-color: #000;
+    padding: 20px 0 30px;
+}
+
+.howtab1 {
+    font-family: Wildcrow;
+    font-size: 20px;
+    color: #747474;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 15px;
+    opacity: .5;
+    text-transform: uppercase;
+}
+
+.howtab2 {
+    font-size: 55px;
+    font-family: Wild_Wolf;
+    text-align: center;
+    margin-top: 35px;
+    letter-spacing: 2px;
+    color: #fff;
+    animation: neon 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 5px #FF1493,
+                     0 0 10px #FF1493,
+                     0 0 20px #FF1493,
+                     0 0 40px #FF1493;
+    }
+
+    to {
+        text-shadow: 0 0 10px #FF1493,
+                     0 0 20px #FF1493,
+                     0 0 40px #FF1493,
+                     0 0 80px #FF1493,
+                     0 0 120px #FF1493;
+    }
+}
+
+.howtab3 {
+    width: 400px;
+    font-family: CaviarDreams;
+    text-align: justify;
+    font-size: 13px;
+    line-height: 120%;
+    color: #929292;
+    margin: 50px auto;
+}
+
+.howtab3 b,
+.howtab3 i {
+    color: #1A72D6;
+}
+
+.howtab4 {
+    width: 370px;
+    margin: 25px auto 0;
+    padding: 20px;
+    background: #1A1A1A;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #ff4fd8, 0 0 25px #5B64CF;
+    font-family: CaviarDreams, sans-serif;
+    font-size: 13px;
+    color: #bebaba;
+    text-align: left;
+}
+
+.howinfo {
+    line-height: 1.2;
+    margin: 2px 0;
+    text-align: left;
+}
+
+.howinfo b {
+    background: linear-gradient(90deg, #ff4fd8, #3da8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.howinfo + .howinfo {
+    margin-top: 15px;
+}
+
+.howinfo:last-child b {
+    color: #3da8ff;
+}
