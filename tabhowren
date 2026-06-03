@@ -107,3 +107,7 @@
 .howinfo:last-child b {
     color: #3da8ff;
 }
+
+.howinfo + .howinfo {
+    margin-top: 15px;
+}
