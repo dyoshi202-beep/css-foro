@@ -1,31 +1,26 @@
 @font-face {
   font-family: 'Wildcrow';
-  src: url('https://files.jcink.net/uploads2/cherryboomboom/Wildcrow.ttf');
+  src: url(https://files.jcink.net/uploads2/cherryboomboom/Wildcrow.ttf);
 }
 
 @font-face {
   font-family: 'Comfortaa';
-  src: url('https://files.jcink.net/uploads2/cherryboomboom/Comfortaa.ttf');
+  src: url(https://files.jcink.net/uploads2/cherryboomboom/Comfortaa.ttf);
 }
 
 @font-face {
   font-family: 'Funky';
-  src: url('https://files.jcink.net/uploads2/cherryboomboom/Funky.ttf');
+  src: url(https://files.jcink.net/uploads2/cherryboomboom/Funky.ttf);
 }
 
 .warh {
-  width: 100%;
-  max-width: 550px;
+  width: 550px;
   padding: 20px 0 30px;
-  margin: 40px auto;
-
+  margin-top: 40px;
   background: linear-gradient(180deg, #D7F1F5, #D7F1F5) padding-box,
               linear-gradient(90deg, #318DEB, #FF4FD8, #A855F7, #FF3B3B, #4DFF88, #FFE600) border-box;
-
   border: 10px solid transparent;
   border-radius: 25px;
-
-  box-sizing: border-box;
 }
 
 .warh1 {
@@ -45,38 +40,33 @@
   text-align: center;
   margin-top: 25px;
   letter-spacing: 2px;
-
   background: linear-gradient(90deg, #318DEB, #FF4FD8, #A855F7, #FF3B3B, #4DFF88, #FFE600);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+  display: inline-block;
+  width: 100%;
   line-height: 1.2;
   padding: 10px 0;
-
   animation: heartbeat 1.6s ease-in-out infinite;
   transform-origin: center;
 }
 
 @keyframes heartbeat {
-  0% { transform: scale(1); }
-  25% { transform: scale(1.05); }
-  50% { transform: scale(1); }
-  75% { transform: scale(1.03); }
-  100% { transform: scale(1); }
+  0% {transform: scale(1); filter: drop-shadow(0 0 0px rgba(124,77,255,1));}
+  25% {transform: scale(1.05); filter: drop-shadow(0 0 6px rgba(124,77,255,1.25));}
+  50% {transform: scale(1);}
+  75% {transform: scale(1.03); filter: drop-shadow(0 0 10px rgba(124,77,255,1.35));}
+  100% {transform: scale(1);}
 }
 
 .warh3 {
   width: 400px;
   font-family: Comfortaa;
+  text-align: justify;
   font-size: 14px;
   line-height: 120%;
   color: #000;
   margin: 50px auto;
-
-  text-align: justify;
-  text-justify: inter-word;
-
-  box-sizing: border-box;
 }
 
 .warh3 b,
@@ -84,7 +74,10 @@
   background: linear-gradient(90deg, #318DEB, #FF4FD8, #A855F7, #FF3B3B);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+  color: transparent;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
   font-weight: 900;
 }
 
@@ -96,20 +89,20 @@
   gap: 20px;
   width: 100%;
   margin: 30px auto;
+  text-align: center;
 }
 
 .warhimg2 {
   width: 100px;
   height: 100px;
+  position: relative;
   border-radius: 50%;
   overflow: hidden;
-
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-
   animation: breathe 2.4s ease-in-out infinite;
+  transform-origin: center;
 }
 
 .warhimg2::before {
@@ -118,25 +111,12 @@
   inset: 0;
   border-radius: 50%;
   padding: 4px;
-
-  background: linear-gradient(
-    90deg,
-    #318DEB,
-    #FF4FD8,
-    #A855F7,
-    #FF3B3B,
-    #4DFF88,
-    #FFE600,
-    #00F5FF
-  );
-
-  -webkit-mask: linear-gradient(#000 0 0) content-box,
-                linear-gradient(#000 0 0);
-
+  background: linear-gradient(90deg, #318DEB, #FF4FD8, #A855F7, #FF3B3B, #4DFF88, #FFE600, #00F5FF);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-
   animation: rotateAura 6s linear infinite;
+  pointer-events: none;
 }
 
 .warhimg2 img {
@@ -144,10 +124,8 @@
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-
   position: relative;
   z-index: 1;
-
   transition: transform 1.2s ease;
 }
 
@@ -166,36 +144,61 @@
   100% { transform: rotate(360deg); }
 }
 
-.warh4 {
-  width: 100%;
-  max-width: 460px;
+.warhimg2:hover {
+  animation: breatheFast 1.3s ease-in-out infinite;
+}
 
+@keyframes breatheFast {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.warhimg3 {
+  background: #003eff70;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: .5s;
+}
+
+.warhimg2:hover .warhimg3 {
+  opacity: 1;
+}
+
+.warhimg4 {
+  text-align: center;
+  line-height: 13px;
+  color: #ffffff;
+  font-family: Comfortaa;
+  font-size: 7px;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px #71c4cd;
+}
+
+.warh4 {
+  width: 460px;
   font-family: "Comfortaa";
   font-size: 13px;
   color: #1a1a1a;
-
   margin: 30px auto 40px;
-  padding: 32px 25px;
-
   background: linear-gradient(180deg, #D7F1F5, #D7F1F5) padding-box,
               linear-gradient(90deg, #318DEB, #FF4FD8, #A855F7, #FF3B3B, #4DFF88, #FFE600) border-box;
-
   border: 8px solid transparent;
   border-radius: 15px;
-
   box-sizing: border-box;
-
+  padding: 32px 30px;
   box-shadow: 0 0 10px rgba(0,245,255,.35),
               0 0 25px rgba(0,245,255,.25);
-
-  /* columnas */
   column-count: 2;
   column-gap: 25px;
-
-  /* texto limpio */
   text-align: justify;
   text-justify: inter-word;
-
   overflow-wrap: break-word;
   word-break: break-word;
 }
@@ -205,19 +208,36 @@
   align-items: baseline;
   gap: 12px;
   margin-bottom: 14px;
-
   break-inside: avoid;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
 }
 
 .warhnum {
   font: 900 25px 'Funky';
   letter-spacing: 2px;
-
+  flex: 0 0 auto;
+  min-width: 36px;
+  padding-left: 2px;
   background: linear-gradient(90deg, #318DEB, #FF4FD8, #A855F7, #FF3B3B);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: heartbeat_clean 1.6s ease-in-out infinite;
+  transform-origin: center;
+}
 
-  animation: heartbeat 1.6s ease-in-out infinite;
+@keyframes heartbeat_clean {
+  0% {transform: scale(1);}
+  25% {transform: scale(1.05);}
+  50% {transform: scale(1);}
+  75% {transform: scale(1.03);}
+  100% {transform: scale(1);}
+}
+
+.warh4 b {
+  background: linear-gradient(90deg, #318DEB, #FF4FD8, #A855F7, #FF3B3B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+  font-size: 13px;
 }
