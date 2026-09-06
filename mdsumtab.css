@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(https://files.jcink.net/uploads2/cherryboomboom/Comfortaa.ttf);
+}
+
+@font-face {
+    font-family: 'subtitudis';
+    src: url(https://files.jcink.net/uploads2/cherryboomboom/subtitudis.otf);
+}
+
+.mdsumtab {
+    width: 550px;
+    padding: 20px 0 30px;
+    margin-top: 40px;
+    background:
+        linear-gradient(180deg, #E9F2DE, #DCEBCF) padding-box,
+        linear-gradient(135deg, #314F2E, #72CC68, #F667B5, #D74E88) border-box;
+    border: 5px solid transparent;
+    border-radius: 0;
+    box-shadow:
+        0 10px 30px rgba(49,79,46,.20),
+        0 5px 15px rgba(215,78,136,.12);
+}
+
+.mdsumtab1 {
+    font-family: subtitudis;
+    font-size: 15px;
+    color: #314F2E;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 10px;
+    opacity: .75;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(246,103,181,.15);
+}
+
+.mdsumtab2 {
+    font-size: 45px;
+    font-family: titulodis;
+    text-align: center;
+    margin-top: 25px;
+    letter-spacing: 3px;
+    background: linear-gradient(
+        90deg,
+        #314F2E 0%,
+        #4A7746 25%,
+        #D74E88 50%,
+        #F667B5 75%,
+        #314F2E 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    width: 100%;
+    line-height: 1.2;
+    padding: 10px 0;
+    animation: midnightElegant 6s ease-in-out infinite;
+    text-shadow: none;
+}
+
+@keyframes midnightElegant {
+    0% {
+        background-position: 0% center;
+        filter: drop-shadow(0 2px 2px rgba(49,79,46,.08));
+    }
+
+    50% {
+        background-position: 100% center;
+        filter: drop-shadow(0 3px 7px rgba(215,78,136,.16));
+    }
+
+    100% {
+        background-position: 0% center;
+        filter: drop-shadow(0 2px 2px rgba(49,79,46,.08));
+    }
+}
+
+.mdsumtab3 {
+    width: 450px;
+    font-family: Comfortaa;
+    text-align: justify;
+    font-size: 13px;
+    line-height: 175%;
+    color: #919191;
+    margin: 45px auto;
+    padding: 30px 34px;
+    box-sizing: border-box;
+    position: relative;
+    background: transparent;
+    border: 1px solid rgba(49,79,46,.35);
+    box-shadow: 0 5px 15px rgba(49,79,46,.07);
+}
+
+.mdsumtab3:before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border: 1px solid rgba(215,78,136,.28);
+    pointer-events: none;
+}
+
+.mdsumtab3 b,
+.mdsumtab3 i {
+    color: #F667B5;
+    font-size: 13px;
+    letter-spacing: .5px;
+    font-weight: 900;
+}
+
+.mdsumtab4 {
+    width: 450px;
+    font-family: Comfortaa;
+    font-size: 13px;
+    color: #919191;
+    margin: 30px auto 40px;
+    background: transparent;
+    border: 1px solid rgba(49,79,46,.35);
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 32px 30px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(49,79,46,.07);
+    text-align: left;
+}
+
+.mdsumtab4:before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border: 1px solid rgba(215,78,136,.28);
+    pointer-events: none;
+}
+
+.mdsuminfo {
+    line-height: 1.4;
+    margin: 2px 0;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+.mdsuminfo b {
+    color: #F667B5;
+    font-size: 13px;
+    letter-spacing: .5px;
+    font-family: subtitudis;
+    font-weight: 900;
+}
+
+.mdsuminfo:nth-child(2) b {
+    color: #56B038;
+}
+
+.mdsuminfo:nth-child(3) b {
+    color: #F667B5;
+}
+
+.mdsuminfo + .mdsuminfo {
+    margin-top: 15px;
+}
