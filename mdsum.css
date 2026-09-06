@@ -1,17 +1,23 @@
 ```css
 @font-face {
     font-family: 'titulodis';
-    src: url(https://files.jcink.net/uploads2/cherryboomboom/titulodis.otf);
+    src: url('https://files.jcink.net/uploads2/cherryboomboom/titulodis.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Comfortaa';
-    src: url(https://files.jcink.net/uploads2/cherryboomboom/Comfortaa.ttf);
+    src: url('https://files.jcink.net/uploads2/cherryboomboom/Comfortaa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'subtitudis';
-    src: url(https://files.jcink.net/uploads2/cherryboomboom/subtitudis.otf);
+    src: url('https://files.jcink.net/uploads2/cherryboomboom/subtitudis.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .mdsum {
