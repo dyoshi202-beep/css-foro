@@ -1,11 +1,4 @@
 ```css
-@font-face {
-    font-family: 'subtitudis';
-    src: url('https://files.jcink.net/uploads2/cherryboomboom/subtitudis.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .mdsum {
     width: 550px;
     padding: 20px 0 30px;
