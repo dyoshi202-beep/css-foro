@@ -1,12 +1,4 @@
 ```css
-
-@font-face {
-    font-family: 'Comfortaa';
-    src: url('https://files.jcink.net/uploads2/cherryboomboom/Comfortaa.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @font-face {
     font-family: 'subtitudis';
     src: url('https://files.jcink.net/uploads2/cherryboomboom/subtitudis.otf') format('opentype');
@@ -87,7 +79,7 @@
     width: 450px;
     font-family: Comfortaa;
     text-align: justify;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 175%;
     color: #919191;
     margin: 45px auto;
@@ -113,11 +105,7 @@
 
 .mdsum3 b,
 .mdsum3 i {
-    background: linear-gradient(
-        90deg,
-        #314F2E,
-        #D74E88,
-        #F667B5
+    color: #F667B5
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -200,7 +188,7 @@
 .mdsum4 {
     width: 460px;
     font-family: Comfortaa;
-    font-size: 13px;
+    font-size: 11px;
     color: #919191;
     margin: 30px auto 40px;
     background: transparent;
@@ -260,16 +248,7 @@
 }
 
 .mdsum4 b {
-    background: linear-gradient(
-        90deg,
-        #D74E88,
-        #F667B5
+    color: #F667B5
     );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    display: inline-block;
-    font-size: 13px;
 }
 ```
