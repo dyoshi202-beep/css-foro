@@ -1,12 +1,28 @@
-```css
+@font-face {
+    font-family: 'titulodis';
+    src: url(https://files.jcink.net/uploads2/cherryboomboom/titulodis.otf);
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(https://files.jcink.net/uploads2/cherryboomboom/Comfortaa.ttf);
+}
+
+@font-face {
+    font-family: 'subtitudis';
+    src: url(https://files.jcink.net/uploads2/cherryboomboom/subtitudis.otf);
+}
+
 .mdsumtab {
     width: 500px;
     padding: 20px 0 30px;
     margin-top: 40px;
-    background: linear-gradient(180deg, #E9F2DE, #DCEBCF) padding-box, linear-gradient(135deg, #314F2E, #72CC68, #F667B5, #D74E88) border-box;
+    background: linear-gradient(180deg, #E9F2DE, #DCEBCF) padding-box,
+                linear-gradient(135deg, #314F2E, #72CC68, #F667B5, #D74E88) border-box;
     border: 5px solid transparent;
     border-radius: 0;
-    box-shadow: 0 10px 30px rgba(49,79,46,.20), 0 5px 15px rgba(215,78,136,.12);
+    box-shadow: 0 10px 30px rgba(49,79,46,.20),
+                0 5px 15px rgba(215,78,136,.12);
 }
 
 .mdsumtab1 {
@@ -58,10 +74,10 @@
 }
 
 .mdsumtab3 {
-    width: 450px;
+    width: 420px;
     font-family: Comfortaa;
     text-align: justify;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 175%;
     color: #919191;
     margin: 45px auto;
@@ -81,21 +97,15 @@
     pointer-events: none;
 }
 
-.mdsumtab3 b {
-    color: #F667B5;
-}
-
+.mdsumtab3 b,
 .mdsumtab3 i {
     color: #F667B5;
-    font-size: 13px;
-    letter-spacing: .5px;
-    font-weight: 900;
 }
 
 .mdsumtab4 {
-    width: 450px;
+    width: 420px;
     font-family: Comfortaa;
-    font-size: 13px;
+    font-size: 11px;
     color: #919191;
     margin: 30px auto 40px;
     background: transparent;
@@ -126,6 +136,10 @@
 
 .mdsuminfo b {
     color: #F667B5;
+    font-size: 13px;
+    letter-spacing: .5px;
+    font-family: subtitudis;
+    font-weight: 900;
 }
 
 .mdsuminfo:nth-child(2) b {
@@ -139,5 +153,4 @@
 .mdsuminfo + .mdsuminfo {
     margin-top: 15px;
 }
-```
 
