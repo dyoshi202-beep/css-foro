@@ -1,23 +1,12 @@
 ```css
 .mdsumtab {
-    width: 550px;
-    max-width: 95%;
+    width: 500px;
     padding: 20px 0 30px;
-    margin: 40px auto 0;
-    background: #E9F2DE;
-    border: 5px solid;
-    border-image: linear-gradient(
-        135deg,
-        #314F2E,
-        #72CC68,
-        #F667B5,
-        #D74E88
-    ) 1;
+    margin-top: 40px;
+    background: linear-gradient(180deg, #E9F2DE, #DCEBCF) padding-box, linear-gradient(135deg, #314F2E, #72CC68, #F667B5, #D74E88) border-box;
+    border: 5px solid transparent;
     border-radius: 0;
-    box-sizing: border-box;
-    box-shadow:
-        0 10px 30px rgba(49,79,46,.20),
-        0 5px 15px rgba(215,78,136,.12);
+    box-shadow: 0 10px 30px rgba(49,79,46,.20), 0 5px 15px rgba(215,78,136,.12);
 }
 
 .mdsumtab1 {
@@ -38,14 +27,7 @@
     text-align: center;
     margin-top: 25px;
     letter-spacing: 3px;
-    background: linear-gradient(
-        90deg,
-        #314F2E 0%,
-        #4A7746 25%,
-        #D74E88 50%,
-        #F667B5 75%,
-        #314F2E 100%
-    );
+    background: linear-gradient(90deg, #314F2E 0%, #4A7746 25%, #D74E88 50%, #F667B5 75%, #314F2E 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -56,7 +38,6 @@
     padding: 10px 0;
     animation: midnightElegant 6s ease-in-out infinite;
     text-shadow: none;
-    box-sizing: border-box;
 }
 
 @keyframes midnightElegant {
@@ -78,10 +59,9 @@
 
 .mdsumtab3 {
     width: 450px;
-    max-width: 90%;
     font-family: Comfortaa;
     text-align: justify;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 175%;
     color: #919191;
     margin: 45px auto;
@@ -101,16 +81,21 @@
     pointer-events: none;
 }
 
-.mdsumtab3 b,
+.mdsumtab3 b {
+    color: #F667B5;
+}
+
 .mdsumtab3 i {
     color: #F667B5;
+    font-size: 13px;
+    letter-spacing: .5px;
+    font-weight: 900;
 }
 
 .mdsumtab4 {
     width: 450px;
-    max-width: 90%;
     font-family: Comfortaa;
-    font-size: 12px;
+    font-size: 13px;
     color: #919191;
     margin: 30px auto 40px;
     background: transparent;
@@ -141,10 +126,6 @@
 
 .mdsuminfo b {
     color: #F667B5;
-    font-size: 13px;
-    letter-spacing: .5px;
-    font-family: subtitudis;
-    font-weight: 900;
 }
 
 .mdsuminfo:nth-child(2) b {
@@ -158,49 +139,5 @@
 .mdsuminfo + .mdsuminfo {
     margin-top: 15px;
 }
-
-
-/* VERSIÓN MÓVIL */
-
-@media screen and (max-width: 600px) {
-
-    .mdsumtab {
-        width: 95%;
-        max-width: 95%;
-        padding: 15px 0 25px;
-        margin-top: 25px;
-    }
-
-    .mdsumtab2 {
-        font-size: 32px;
-        letter-spacing: 2px;
-        padding: 8px 5px;
-    }
-
-    .mdsumtab1 {
-        font-size: 12px;
-        letter-spacing: 2px;
-        padding: 0 10px;
-    }
-
-    .mdsumtab3 {
-        width: 90%;
-        max-width: 90%;
-        padding: 25px 22px;
-        margin: 30px auto;
-        font-size: 11px;
-    }
-
-    .mdsumtab4 {
-        width: 90%;
-        max-width: 90%;
-        padding: 25px 20px;
-        margin: 25px auto 30px;
-        font-size: 11px;
-    }
-
-    .mdsuminfo b {
-        font-size: 12px;
-    }
-}
 ```
+
