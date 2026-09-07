@@ -3,14 +3,10 @@
     width: 550px;
     padding: 20px 0 30px;
     margin-top: 40px;
-    background:
-        linear-gradient(180deg, #E9F2DE, #DCEBCF) padding-box,
-        linear-gradient(135deg, #314F2E, #72CC68, #F667B5, #D74E88) border-box;
+    background: linear-gradient(180deg, #E9F2DE, #DCEBCF) padding-box, linear-gradient(135deg, #314F2E, #72CC68, #F667B5, #D74E88) border-box;
     border: 5px solid transparent;
     border-radius: 0;
-    box-shadow:
-        0 10px 30px rgba(49,79,46,.20),
-        0 5px 15px rgba(215,78,136,.12);
+    box-shadow: 0 10px 30px rgba(49,79,46,.20), 0 5px 15px rgba(215,78,136,.12);
 }
 
 .mdsum1 {
@@ -31,14 +27,7 @@
     text-align: center;
     margin-top: 25px;
     letter-spacing: 3px;
-    background: linear-gradient(
-        90deg,
-        #314F2E 0%,
-        #4A7746 25%,
-        #D74E88 50%,
-        #F667B5 75%,
-        #314F2E 100%
-    );
+    background: linear-gradient(90deg, #314F2E 0%, #4A7746 25%, #D74E88 50%, #F667B5 75%, #314F2E 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -72,7 +61,7 @@
     width: 450px;
     font-family: Comfortaa;
     text-align: justify;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 175%;
     color: #919191;
     margin: 45px auto;
@@ -88,7 +77,7 @@
     content: "";
     position: absolute;
     inset: 7px;
-    border: 1px solid rgba(215,79,136,.28);
+    border: 1px solid rgba(215,78,136,.28);
     pointer-events: none;
 }
 
@@ -96,9 +85,16 @@
     display: none;
 }
 
-.mdsum3 b,
+.mdsum3 b {
+    color: #D74E88;
+}
+
 .mdsum3 i {
-    color: #F667B5;
+    background: linear-gradient(90deg, #314F2E, #D74E88, #F667B5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     font-size: 13px;
     letter-spacing: .5px;
     font-weight: 900;
@@ -127,9 +123,7 @@
     padding: 8px;
     box-sizing: border-box;
     border-radius: 0;
-    box-shadow:
-        0 6px 18px rgba(49,79,46,.14),
-        0 3px 10px rgba(140,89,107,.10);
+    box-shadow: 0 6px 18px rgba(49,79,46,.14), 0 3px 10px rgba(140,89,107,.10);
 }
 
 .mdsumimg2 img {
@@ -176,7 +170,7 @@
 .mdsum4 {
     width: 460px;
     font-family: Comfortaa;
-    font-size: 11px;
+    font-size: 13px;
     color: #919191;
     margin: 30px auto 40px;
     background: transparent;
@@ -224,11 +218,7 @@
     display: inline-block;
     line-height: 1;
     text-align: center;
-    background: linear-gradient(
-        180deg,
-        #314F2E,
-        #D74E88
-    );
+    background: linear-gradient(180deg, #314F2E, #D74E88);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -236,7 +226,8 @@
 }
 
 .mdsum4 b {
-    color: #F667B5;
+    color: #D74E88;
 }
 ```
+
 
