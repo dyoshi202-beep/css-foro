@@ -95,7 +95,7 @@
     content: "";
     position: absolute;
     inset: 7px;
-    border: 1px solid rgba(215,78,136,.28);
+    border: 1px solid rgba(215,79,136,.28);
     pointer-events: none;
 }
 
@@ -105,12 +105,7 @@
 
 .mdsum3 b,
 .mdsum3 i {
-    color: #F667B5
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+    color: #F667B5;
     font-size: 13px;
     letter-spacing: .5px;
     font-weight: 900;
@@ -248,7 +243,7 @@
 }
 
 .mdsum4 b {
-    color: #F667B5
-    );
+    color: #F667B5;
 }
 ```
+
