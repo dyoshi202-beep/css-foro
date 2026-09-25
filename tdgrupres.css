@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+@import url('https://fonts.googleapis.com/css?family=Inter+Tight');
+
+@font-face {
+    font-family: 'Metal_Lord';
+    src: url('https://files.jcink.net/uploads2/cherryboomboom/Metal_Lord.otf');
+}
+
+.tdgrupres {
+    width: 550px;
+    padding: 30px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #FF0000 0%, #8B0000 45%, #000000 100%);
+    border-radius: 0;
+    box-shadow: 0 12px 35px rgba(0,0,0,.55);
+}
+
+.tdgrup-inneres {
+    width: 100%;
+    box-sizing: border-box;
+    background: #000000;
+    border: 1px solid rgba(255,23,68,.75);
+    border-radius: 22px;
+    padding: 1px 0 25px;
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(255,0,0,.12),
+        0 0 12px rgba(255,0,0,.18),
+        inset 0 0 18px rgba(255,0,0,.06);
+}
+
+.tdgrupres2 {
+    position: relative;
+    margin: 35px 20px 5px;
+    font-family: 'Metal_Lord';
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    letter-spacing: 2px;
+    text-shadow:
+        4px 4px 0 #000000,
+        7px 7px 0 #FF1744,
+        9px 9px 0 #000000;
+    transform: rotate(-1deg);
+}
+
+.tdgrupres2:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 14px auto 0;
+    background: #FF1744;
+    box-shadow:
+        4px 0 0 #000000,
+        -4px 0 0 #000000;
+    transform: rotate(-2deg);
+}
+
+.tdgrupres1 {
+    position: relative;
+    margin: 15px 20px;
+    font-family: 'Bebas Neue';
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #F2F2F2;
+    text-shadow:
+        2px 2px 0 #FF1744,
+        4px 4px 0 #111111;
+    transition: .3s ease;
+}
+
+.tdgrupres1:hover {
+    text-shadow:
+        3px 3px 0 #FF1744,
+        5px 5px 0 #111111;
+    letter-spacing: 4px;
+}
+
+.tdgrupres3 {
+    width: 450px;
+    margin: 45px auto 30px;
+    padding: 30px 34px;
+    box-sizing: border-box;
+    position: relative;
+    background: #080808;
+    border: 1px solid rgba(255,23,68,.65);
+    box-shadow:
+        5px 5px 0 #FF1744,
+        8px 8px 0 #000000;
+    font-family: 'Inter Tight';
+    text-align: justify;
+    font-size: 13px;
+    line-height: 175%;
+    color: #BDBDBD;
+}
+
+.tdgrupres3:before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border: 1px solid rgba(255,23,68,.25);
+    pointer-events: none;
+}
+
+.tdgrupres3 b,
+.tdgrupres3 i {
+    color: #FF1744;
+    font-size: 13px;
+    letter-spacing: .5px;
+    font-weight: 900;
+}
+
+.tdgrupres4 {
+    width: 450px;
+    margin: 30px auto 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    background: #080808;
+    border: 1px solid rgba(255,23,68,.65);
+    box-shadow:
+        5px 5px 0 #FF1744,
+        8px 8px 0 #000000;
+    font-family: 'Inter Tight';
+    font-size: 13px;
+    line-height: 18px;
+    color: #BDBDBD;
+    text-align: left;
+}
+
+.tdgrupres4:before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border: 1px solid rgba(255,23,68,.25);
+    pointer-events: none;
+}
+
+.tdgrupinfores {
+    line-height: 1.5;
+    margin: 2px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.tdgrupinfores b {
+    color: #FF1744;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue';
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.tdgrupinfores + .tdgrupinfores {
+    margin-top: 15px;
+}
